@@ -1,1 +1,1 @@
-# shopping_list
+Repository which contains Ruby exercises!
