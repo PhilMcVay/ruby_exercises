@@ -1,13 +1,18 @@
 require "./Deck.rb"
 
-player1 = Deck.new
+player = Deck.new
 
-player1.shuffle
+player.shuffle
 
-player1.deal
+player.deal
 
-puts player1.view_hand
+puts player.view_hand
 
-player1.draw_card
+print "Hit or Stick? (hit/stick): "
+answer = gets.chomp.downcase
 
-puts player1.view_hand
+if answer == "hit"
+  player.draw_card
+  puts player.view_hand
+else answer == "stick"
+end
